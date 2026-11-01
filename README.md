@@ -31,7 +31,7 @@ ast-breaker-engine/
 
 ### Installation
 ```bash
-git clone https://github.com
+git clone https://github.com/techindro/ast-breaker-anti-moss-engine.git
 cd ast-breaker-engine
 ```
 
