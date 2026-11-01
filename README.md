@@ -8,34 +8,59 @@ AST-Breaker Anti-MOSS Engine is a tool built to remove code similarity fingerpri
 
 The engine modifies loop patterns (like changing for-loops to while-loops) and alters the code structure analyzed by similarity checkers like MOSS, without breaking the core logic or execution. By using clear, real programming terminology for variable remapping, the final script looks like standard, high-quality code written naturally by a developer.
 
-The core engine disrupts automated Abstract Syntax Tree (AST) matching and Control Flow Graph (CFG) symmetry—the structural signatures analyzed by similarity detectors like MOSS (Measure of Software Similarity)—without breaking functional execution logic. By generating highly natural, contextually accurate software engineering identifiers, the output mimics high-quality, professional code configurations that are virtually indistinguishable from manually rewritten implementations.
+The core engine disrupts automated Abstract Syntax Tree (AST) matching and Control Flow Graph (CFG) symmetry—the structural signatures analyzed by similarity detectors like MOSS—without breaking functional execution logic. By generating natural, contextually accurate software engineering identifiers, the output mimics clean code configurations written naturally by a developer.
 
 ## Directory Structure
 
 ```text
 ast-breaker-engine/
 │
+├── assets/
+│   └── architecture-flowchart.png  # Engine structural parsing flowchart image
+│
 ├── core/
-│   ├── engine.py              # Central orchestrator pipeline
-│   ├── tokenizer.py           # Semantic identifier mapper & variable generator
-│   └── syntax_supplier.py     # Syntax Supplier (For-to-While loop converter)
+│   ├── __init__.py
+│   ├── engine.py                   # Central orchestrator pipeline
+│   ├── tokenizer.py                # Semantic identifier mapper & variable generator
+│   └── syntax_supplier.py          # Syntax Supplier (For-to-While loop converter)
 │
 ├── languages/
-│   └── python_handler.py      # Python strict indentation block tracking
+│   ├── __init__.py
+│   └── python_handler.py           # Python strict indentation block tracking
 │
-├── requirements.txt           # Environment specifications
-└── README.md                  # System architecture specifications
+├── requirements.txt                # Environment specifications
+├── test_runner.py                  # Automated multi-language test validation script
+└── README.md                       # System architecture specifications
 ```
+
+## System Pipeline Architecture
+
+Below is the complete engineering architecture diagram mapping the structural parsing layers of the engine. Both platforms flow diagrams are unified into a single execution layout tracker:
+
+![AST-Breaker Deep Obfuscation Map](assets/architecture-flowchart.png)
+
+### Core Engine Breakdown:
+* **Diagram A: C++ & Brace-Based Syntax Pipeline (Top Section)**
+  Tracks linear iterative structures, explicit variables boundary remapping, and abstract logical trees transformation sequences designed specifically for Codeforces, ICPC, and standard C-style syntax matrices.
+
+* **Diagram B: Python Indentation & Layout Guard Matrix (Bottom Section)**
+  Showcases the dedicated layout guard algorithm built to intercept rigid python spacing scopes, inject stealth execution blocks, and preserve clean indentation properties for LeetCode datasets.
 
 ## Getting Started
 
 ### Installation
 ```bash
 git clone https://github.com/techindro/ast-breaker-anti-moss-engine.git
-cd ast-breaker-engine
+cd ast-breaker-anti-moss-engine
 ```
 
 ### Usage
 ```bash
 python core/engine.py
+```
+
+### Running Tests
+To verify code transformations across different programming languages automatically:
+```bash
+python test_runner.py
 ```
