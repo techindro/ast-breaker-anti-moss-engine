@@ -1,0 +1,9 @@
+# AST-Breaker Anti-MOSS Engine Runtime Specifications
+# Core structural parsing relies completely on built-in systems to optimize performance
+
+# Linting & Syntax integrity validation for processed outputs
+flake8>=6.0.0
+black>=23.0.0
+
+# Automated matrix testing suite for compiler rule checks
+pytest>=7.4.0
