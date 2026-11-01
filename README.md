@@ -55,21 +55,49 @@ Below is the complete engineering architecture diagram mapping the structural pa
 | `syntax_supplier.py` | Changes syntax configurations between equivalent loop forms and handles SQL conditional shifts. |
 | `python_handler.py` | Tracks space arrays and line indentation scopes so Python output stays functional. |
 
+
 ## Getting Started
-
+ 
 ### Installation
+ 
 ```bash
-git clone https://github.com/techindro/ast-breaker-anti-moss-engine.git
-cd ast-breaker-anti-moss-engine
+git clone https://github.com/<your-username>/ast-refactor-engine.git
+cd ast-refactor-engine
+pip install -r requirements.txt
 ```
-
+ 
 ### Usage
+ 
 ```bash
 python core/engine.py
 ```
-
+ 
 ### Running Tests
-To verify code transformations across different programming languages automatically:
+ 
+Verify that transformations preserve behavior across all supported languages:
+ 
 ```bash
 python test_runner.py
 ```
+ 
+## Research Workflow: Evaluating Similarity Detectors
+ 
+1. Start with a set of reference programs you are allowed to use.
+2. Generate behavior-preserving variants with the engine.
+3. Run your similarity detector on the original and transformed pairs.
+4. Report which transformations reduce detection scores, and use that to harden the detector (for example, by comparing normalized ASTs or CFGs).
+ 
+## Roadmap
+ 
+- [ ] Java and JavaScript handlers
+- [ ] Configurable renaming dictionaries per domain
+- [ ] Equivalence checking via differential testing
+- [ ] CLI flags for selecting individual transformation passes
+ 
+## Contributing
+ 
+Pull requests are welcome. Please include tests for any new transformation and make sure `python test_runner.py` passes.
+ 
+## License
+ 
+Add your preferred license here (for example, MIT).
