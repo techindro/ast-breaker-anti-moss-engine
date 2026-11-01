@@ -1,6 +1,6 @@
 # AST-Breaker Anti-MOSS Engine
 
-A multi-language code rewriter designed to bypass MOSS and automated similarity checkers in online assessments. It automatically changes loop patterns, structural paths, and variables using real software engineering names for C++, Python, Java, and JavaScript.
+A multi-language code rewriter designed to bypass MOSS and automated similarity checkers in online assessments. It automatically changes loop patterns, structural paths, and variables using real software engineering names for C, C++, Python, Java, JavaScript, and SQL.
 
 ## Project Description
 
@@ -16,7 +16,7 @@ The core engine disrupts automated Abstract Syntax Tree (AST) matching and Contr
 ast-breaker-engine/
 │
 ├── assets/
-│   └── architecture-flowchart.png  # Engine structural parsing flowchart image
+│   └── architecture-flowchart.jpg  # Engine structural parsing flowchart image
 │
 ├── core/
 │   ├── __init__.py
@@ -37,7 +37,7 @@ ast-breaker-engine/
 
 Below is the complete engineering architecture diagram mapping the structural parsing layers of the engine. Both platforms flow diagrams are unified into a single execution layout tracker:
 
-![AST-Breaker Deep Obfuscation Map](assets/architecture-flowchart.png)
+![AST-Breaker Deep Obfuscation Map](assets/architecture-flowchart.jpg)
 
 ### Core Engine Breakdown:
 * **Diagram A: C++ & Brace-Based Syntax Pipeline (Top Section)**
@@ -45,6 +45,15 @@ Below is the complete engineering architecture diagram mapping the structural pa
 
 * **Diagram B: Python Indentation & Layout Guard Matrix (Bottom Section)**
   Showcases the dedicated layout guard algorithm built to intercept rigid python spacing scopes, inject stealth execution blocks, and preserve clean indentation properties for LeetCode datasets.
+
+## Core Components Matrix
+
+| Component | Responsibility |
+|-----------|----------------|
+| `engine.py` | Manages the orchestrator data streams, transforming modules sequentially. |
+| `tokenizer.py` | Maps custom identifiers to professional software engineering tokens without collisions. |
+| `syntax_supplier.py` | Changes syntax configurations between equivalent loop forms and handles SQL conditional shifts. |
+| `python_handler.py` | Tracks space arrays and line indentation scopes so Python output stays functional. |
 
 ## Getting Started
 
