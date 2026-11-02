@@ -99,5 +99,4 @@ python test_runner.py
 Pull requests are welcome. Please include tests for any new transformation and make sure `python test_runner.py` passes.
  
 ## License
- 
-Add your preferred license here (for example, MIT).
+  MIT License
